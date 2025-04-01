@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+   <h2>Gallery with Details and Summary</h2>
+   <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="content.html">hakdog</a></li>
+    </ul>
+</nav>
+
+<details>
+    <summary>Natures Wonder in the Philippines</summary>
+    <p>This is Mt. Apo, the Largest Mountain in the Philippines</p>
+    <img src="mt apo.webp" alt="Mt. Apo">
+    <div></div>
+    <p>This is the Sierra Madre Mountain Range or Nature's Barrier</p>
+    <img src="sierramadre.jpg" alt="Sierra Madre">
+</details>
+
+<details>
+    <summary>Me</summary>
+    <p>Hi! This is me, I'm just an IT student who is willing to code using HTML.</p>
+</details>
+
+
+<button onclick="showDateTime()">Show Date and Time</button>
+<p id="datetime"></p>
+
+<script>
+    function showDateTime() {
+        const currentDate = new Date();
+        const formattedDate = currentDate.toLocaleString(); 
+        document.getElementById("datetime").innerText = "Current Date and Time: " + formattedDate;
+    }
+</script>
+
+</body>
+</html>
